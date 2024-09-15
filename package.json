@@ -1,9 +1,16 @@
 {
   "name": "copilot-language-server-extracted",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "Transpiled @github/copilot-language-server to ES Modules",
+  "keywords": [
+    "copilot",
+    "github-copilot"
+  ],
+  "homepage": "https://github.com/4513ECHO/copilot-language-server-extracted",
   "author": {
     "name": "Hibiki",
-    "email": "mail@4513echo.dev"
+    "email": "mail@4513echo.dev",
+    "url": "https://4513echo.dev"
   },
   "engines": {
     "node": ">=20",
@@ -16,11 +23,18 @@
   "bin": {
     "copilot-language-server": "./dist/language-server.js"
   },
-  "devDependencies": {
-    "@github/copilot-language-server": "^1.229.0",
-    "esbuild": "^0.23.1"
+  "bugs": {
+    "url": "https://github.com/4513ECHO/copilot-language-server-extracted/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4513ECHO/copilot-language-server-extracted.git"
   },
   "scripts": {
     "build": "rm -rf dist && cp -r node_modules/@github/copilot-language-server/dist dist && node esbuild.js"
+  },
+  "devDependencies": {
+    "@github/copilot-language-server": "^1.229.0",
+    "esbuild": "^0.23.1"
   }
 }
