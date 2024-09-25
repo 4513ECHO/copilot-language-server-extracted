@@ -12,9 +12,9 @@
     "email": "mail@4513echo.dev",
     "url": "https://4513echo.dev"
   },
+  "packageManager": "pnpm@9.11.0",
   "engines": {
-    "node": ">=20",
-    "pnpm": ">=9"
+    "node": ">=22"
   },
   "type": "module",
   "files": [
