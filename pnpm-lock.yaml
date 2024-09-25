@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@github/copilot-language-server':
-        specifier: 1.233.0
-        version: 1.233.0
+        specifier: 1.229.0
+        version: 1.229.0
       esbuild:
         specifier: 0.23.1
         version: 0.23.1
@@ -161,8 +161,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@github/copilot-language-server@1.233.0':
-    resolution: {integrity: sha512-swDuL45ayzA0zhLizOQ/+/aqtW3x2RfqPFzMex9iu189eA9y5zhVDQk8YiSGIQY0BMDZ8MP3SWvulgEbWFOSmA==}
+  '@github/copilot-language-server@1.229.0':
+    resolution: {integrity: sha512-dFZ8lFgJ5DYa3swm2WLLalG0WZ/1KtXvm0Gcj0WzoqbDVTaNlwkG4fL+A9PeiGkgoiGKtnQPlv1ugLRG3OMekA==}
     hasBin: true
 
   esbuild@0.23.1:
@@ -244,7 +244,7 @@ snapshots:
   '@esbuild/win32-x64@0.23.1':
     optional: true
 
-  '@github/copilot-language-server@1.233.0': {}
+  '@github/copilot-language-server@1.229.0': {}
 
   esbuild@0.23.1:
     optionalDependencies:
