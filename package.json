@@ -1,6 +1,6 @@
 {
   "name": "copilot-language-server-extracted",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Transpiled @github/copilot-language-server to ES Modules",
   "keywords": [
     "copilot",
