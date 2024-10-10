@@ -14,6 +14,21 @@ await build({
     import { createRequire } from "node:module";
     const __dirname = import.meta.dirname;
     const __filename = import.meta.filename;
-    const require = createRequire(import.meta.url);`,
+    const _require = createRequire(import.meta.url);
+    function require(mod) {
+      if (mod !== "tls") {
+        return _require(mod);
+      }
+      const tls = _require("tls");
+      if (tls.createSecureContext()?.context?.addCACert) {
+        return tls;
+      }
+      const _createSecureContext = tls.createSecureContext;
+      tls.createSecureContext = (arg) => ({
+        ..._createSecureContext(arg),
+        context: { addCACert: (_key) => {} },
+      });
+      return tls;
+    }`,
   },
 });

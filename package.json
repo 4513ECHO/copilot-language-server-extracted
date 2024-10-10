@@ -34,7 +34,7 @@
     "build": "rm -rf dist && cp -r node_modules/@github/copilot-language-server/dist dist && node esbuild.js"
   },
   "devDependencies": {
-    "@github/copilot-language-server": "1.229.0",
+    "@github/copilot-language-server": "1.235.0",
     "esbuild": "0.23.1"
   }
 }
